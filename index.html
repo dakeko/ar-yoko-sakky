@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>喋る名刺Sakki</title>
+    <link rel="preconnect" href="https://aframe.io">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    <link rel="stylesheet" href="js/ar-core.css">
+</head>
+
+<body>
+    <script>
+        window.AR_CONFIG = {
+
+            video: 'assets/videos/sakki02.mp4',
+
+            // 横向き名刺（91mm × 55mm）
+            width: 1.65,
+            height: 1,
+
+            intro: 'しゃべりのプロ集団<br>オフィスサッキー代表の<br>坂本咲子です！',
+            message: 'カメラを準備しています…<br>準備ができたら名刺をかざしてください',
+
+            links: [
+                { icon: 'assets/images/icon_hp.png', url: 'https://offices-sakky.com' }
+            ],
+
+
+
+            debug: true
+
+        };
+    </script>
+    <script src="js/ar-core.js"></script>
+</body>
+
+</html>
